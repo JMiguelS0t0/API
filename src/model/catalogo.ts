@@ -3,10 +3,10 @@ export class catalogo {
     this.Id = 0;
     this.Nombre = "";
     this.img = "";
-    this.descripcion = [];
+    this.descripcion = "";
   }
   Id: number;
   Nombre: string;
   img: string;
-  descripcion: Array<string>;
+  descripcion: string;
 }
