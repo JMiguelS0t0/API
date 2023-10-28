@@ -1,7 +1,7 @@
 export const sqlConfig = {
     user: 'sa',
     password: '1234',
-    database: 'SWIII',
+    database: 'PPI',
     server: 'localhost',
     options: {
         encrypt: true,
