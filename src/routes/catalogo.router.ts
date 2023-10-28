@@ -1,7 +1,8 @@
-import router from "./persona.router";
 import express from "express";
 import * as CatalogoController from "../controllers/catalogo.controller";
 import { catalogo } from "../model/catalogo";
+
+const router = express.Router();
 
 router.get("/", (_, res) => {
   CatalogoController.getCatalogo()
