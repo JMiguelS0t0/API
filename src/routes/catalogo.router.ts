@@ -4,7 +4,7 @@ import { catalogo } from "../model/catalogo";
 
 const router = express.Router();
 
-router.get("/", (_, res) => {
+router.get("/catalogo", (_, res) => {
   CatalogoController.getCatalogo()
     .then((obj) => {
       res.json(obj);
@@ -14,7 +14,7 @@ router.get("/", (_, res) => {
     });
 });
 
-router.post("/", (req: express.Request, res: express.Response) => {
+router.post("/catalogo", (req: express.Request, res: express.Response) => {
   CatalogoController.postCatalogo(req.body as catalogo)
     .then((f) => {
       if (f) res.status(201).send();

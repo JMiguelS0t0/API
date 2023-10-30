@@ -5,7 +5,7 @@ export const listarCatalogo = async (): Promise<catalogo[]> => {
   try {
     let sql = "SELECT * FROM catalogo";
     const pool = await GetConnection();
-    let rs = await pool.query<catalogo>(sql);
+    let rs = await pool.query<catalogo[]>(sql);
     if (rs != undefined) {
       return rs.recordset;
     }
