@@ -1,10 +1,13 @@
 export class servicios {
   constructor() {
-    this.Id = 0;
     this.img = "";
-    this.descripcion = [];
+    this.descripcion = "";
+    this.paquete = 0;
+    this.personalizacion = "";
   }
-  Id: number;
+  Id?: number;
   img: string;
-  descripcion: Array<string>;
+  descripcion: string;
+  paquete: number;
+  personalizacion: string;
 }

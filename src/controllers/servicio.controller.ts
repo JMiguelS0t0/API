@@ -10,10 +10,26 @@ export const getServicios = async (): Promise<servicios[]> => {
   }
 };
 
-export const PostServicio = async (S: servicios): Promise<boolean>=>{
-    try {
-        return DaoServicio.crearServicio(S);
-    } catch (error) {
-        throw error;
-    }
-}
+export const PostServicio = async (S: servicios): Promise<boolean> => {
+  try {
+    return DaoServicio.crearServicio(S);
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const DeleteServicio = async (Id: number): Promise<boolean> => {
+  try {
+    return DaoServicio.borrarServicio(Id);
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const UpdateServicio = async (Id: number, S: servicios): Promise<boolean> => {
+  try {
+    return DaoServicio.actualizarServicio(Id, S);
+  } catch (error) {
+    throw error;
+  }
+};
