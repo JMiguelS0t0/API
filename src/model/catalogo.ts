@@ -1,12 +1,13 @@
 export class catalogo {
   constructor() {
-    this.Id = 0;
-    this.Nombre = "";
-    this.img = "";
+    this.nombre = "";
     this.descripcion = "";
+    this.img = "";
+    this.items = "";
   }
-  Id: number;
-  Nombre: string;
-  img: string;
+  Id?: number;
+  nombre: string;
   descripcion: string;
+  img: string;
+  items: string;
 }
